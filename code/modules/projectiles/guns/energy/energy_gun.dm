@@ -12,6 +12,20 @@
 	flight_y_offset = 10
 	dual_wield_spread = 60
 
+/obj/item/gun/energy/e_gun/e11
+	name = "E-11 blaster rifle"
+	desc = "A small, lightweight blaster rifle manufactured by BlasTech Industries. It was designed as a lightweight standard issue assault weapon for the Empire's stormtroopers that could be effective in almost all combat situations. This particular production model features both a stun and kill setting."
+	icon_state = "E-11"
+	w_class = WEIGHT_CLASS_BULKY
+	inhand_icon_state = "e11"
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser)
+	modifystate = 1
+	can_flashlight = TRUE
+	ammo_x_offset = 3
+	flight_x_offset = 15
+	flight_y_offset = 10
+	dual_wield_spread = 60
+
 /obj/item/gun/energy/e_gun/mini
 	name = "miniature energy gun"
 	desc = "A small, pistol-sized energy gun with a built-in flashlight. It has two settings: disable and kill."
