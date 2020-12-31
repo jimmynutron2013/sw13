@@ -17,6 +17,8 @@
 	inhand_icon_state = "A280"
 	ammo_type = list(/obj/item/ammo_casing/energy/sw13/a280)
 	zoomable = TRUE
+	zoom_amt = 5
+	zoom_out_amt = 3
 
 /obj/item/gun/energy/sw13/ee3
 	name = "EE-3"

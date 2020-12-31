@@ -72,12 +72,12 @@
 	return ..()
 
 /obj/item/gun/energy/process(delta_time)
-	if(selfcharge && cell && cell.percent() < 100)
+	if(selfcharge && cell && cell.percent() < 10)
 		charge_timer += delta_time
 		if(charge_timer < charge_delay)
 			return
 		charge_timer = 0
-		cell.give(100)
+		cell.give(1000)
 		if(!chambered) //if empty chamber we try to charge a new shot
 			recharge_newshot(TRUE)
 		update_icon()
