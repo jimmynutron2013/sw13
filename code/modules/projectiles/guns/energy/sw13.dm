@@ -8,6 +8,7 @@
 	icon_state = "SE-14C"
 	inhand_icon_state = "SE-14C"
 	ammo_type = list(/obj/item/ammo_casing/energy/sw13/se14c)
+	zoomable = TRUE
 
 /obj/item/gun/energy/sw13/a280
 	name = "A280"
@@ -15,6 +16,7 @@
 	icon_state = "A280"
 	inhand_icon_state = "A280"
 	ammo_type = list(/obj/item/ammo_casing/energy/sw13/a280)
+	zoomable = TRUE
 
 /obj/item/gun/energy/sw13/ee3
 	name = "EE-3"
@@ -22,6 +24,7 @@
 	icon_state = "EE-3"
 	inhand_icon_state = "EE-3"
 	ammo_type = list(/obj/item/ammo_casing/energy/sw13/ee3)
+	zoomable = TRUE
 
 /obj/item/gun/energy/sw13/dh17
 	name = "DH-17"
@@ -36,20 +39,21 @@
 	icon_state = "scout_pistol"
 	inhand_icon_state = "scout_pistol"
 	ammo_type = list(/obj/item/ammo_casing/energy/sw13/ec17)
+	zoomable = TRUE
 
 /obj/item/gun/energy/sw13/ca87
 	name = "CA-87"
 	desc = "CA-87 blasters were shock blasters created by Jawas and retrofitted to create a short-ranged weapon, and were mainly used to disable droids. However, they were modified to shoot blaster cartridges. These blasters, despite their inaccuracy at range, could be deadly in close quarter combat."
 	icon_state = "CA87"
 	inhand_icon_state = "CA87"
-	ammo_type = list(/obj/item/ammo_casing/energy/sw13/ca87)
+	ammo_type = list(/obj/item/ammo_casing/energy/sw13/ca87, /obj/item/ammo_casing/energy/sw13/ca87/ion)
 
 /obj/item/gun/energy/sw13/bryar
 	name = "Bryar Pistol"
 	desc = "The K-16 Bryar Pistol was a model of blaster pistol, modified from a blaster rifle of the same name.  Though it was not as powerful as other blaster pistols, it actually possesses a modified power unit, which enabled the weapon to discharge its entire heat source in one lethal power blast as secondary fire."
 	icon_state = "Bryar"
 	inhand_icon_state = "Bryar"
-	ammo_type = list(/obj/item/ammo_casing/energy/sw13/bryar)
+	ammo_type = list(/obj/item/ammo_casing/energy/sw13/bryar, /obj/item/ammo_casing/energy/sw13/bryar/secondary)
 
 /obj/item/gun/energy/sw13/a180
 	name = "A-180"
@@ -78,4 +82,5 @@
 	icon_state = "DL-44"
 	inhand_icon_state = "DL-44"
 	ammo_type = list(/obj/item/ammo_casing/energy/sw13/dl44)
+	zoomable = TRUE
 

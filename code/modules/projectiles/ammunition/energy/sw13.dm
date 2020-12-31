@@ -29,12 +29,23 @@
 /obj/item/ammo_casing/energy/sw13/ca87
 	projectile_type = /obj/projectile/beam/laser/sw13/ca87
 	select_name = "kill"
-	e_cost = 100
+	e_cost = 500
+	pellets = 5
+	variance = 25
+
+/obj/item/ammo_casing/energy/sw13/ca87/ion
+	projectile_type = /obj/projectile/ion/sw13/ca87
+	select_name = "ion"
 
 /obj/item/ammo_casing/energy/sw13/bryar
 	projectile_type = /obj/projectile/beam/laser/sw13/bryar
 	select_name = "kill"
 	e_cost = 200
+
+/obj/item/ammo_casing/energy/sw13/bryar/secondary
+	projectile_type = /obj/projectile/beam/laser/sw13/bryar/secondary
+	select_name = "KILL"
+	e_cost = 1000
 
 /obj/item/ammo_casing/energy/sw13/a180
 	projectile_type = /obj/projectile/beam/laser/sw13/a180

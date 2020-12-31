@@ -31,7 +31,19 @@
 /obj/projectile/beam/laser/sw13/ca87
 	name = "laser"
 	wound_bonus = 0
-	damage = 55
+	damage = 11
+	speed = 0.8 //standard
+
+/obj/projectile/ion/sw13/ca87
+	name = "ion bolt"
+	wound_bonus = 0
+	damage = 0
+	speed = 0.8 //standard
+
+/obj/projectile/beam/laser/sw13/ca87
+	name = "laser"
+	wound_bonus = 0
+	damage = 11
 	speed = 0.8 //standard
 
 /obj/projectile/beam/laser/sw13/bryar
@@ -39,6 +51,12 @@
 	wound_bonus = 0
 	damage = 35
 	speed = 0.8 //standard
+
+/obj/projectile/beam/laser/sw13/bryar/secondary
+	name = "laser"
+	wound_bonus = 0
+	damage = 120
+	speed = 0.6 //faster
 
 /obj/projectile/beam/laser/sw13/a180
 	name = "laser"
