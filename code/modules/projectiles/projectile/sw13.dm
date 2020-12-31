@@ -52,7 +52,7 @@
 	damage = 35
 	speed = 0.8 //standard
 
-/obj/projectile/beam/laser/sw13/bryar
+/obj/projectile/beam/laser/sw13/bryar/secondary
 	name = "laser"
 	wound_bonus = 0
 	damage = 120
