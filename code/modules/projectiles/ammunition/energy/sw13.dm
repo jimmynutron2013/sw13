@@ -33,7 +33,7 @@
 	pellets = 5
 	variance = 25
 
-/obj/item/ammo_casing/energy/sw13/ion
+/obj/item/ammo_casing/energy/sw13/ca87/ion
 	projectile_type = /obj/projectile/ion/sw13/ca87
 	select_name = "ion"
 
