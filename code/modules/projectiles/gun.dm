@@ -68,8 +68,8 @@
 	//Zooming
 	var/zoomable = FALSE //whether the gun generates a Zoom action on creation
 	var/zoomed = FALSE //Zoom toggle
-	var/zoom_amt = 3 //Distance in TURFs to move the user's screen forward (the "zoom" effect)
-	var/zoom_out_amt = 0
+	var/zoom_amt = 5 //Distance in TURFs to move the user's screen forward (the "zoom" effect)
+	var/zoom_out_amt = 3
 	var/datum/action/toggle_scope_zoom/azoom
 
 	var/automatic = 0 //can gun use it, 0 is no, anything above 0 is the delay between clicks in ds
