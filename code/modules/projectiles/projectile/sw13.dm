@@ -1,19 +1,19 @@
 /obj/projectile/beam/laser/sw13/se14c
 	name = "laser"
 	wound_bonus = 0
-	damage = 30
+	damage = 25
 	speed = 0.8 //standard
 
 /obj/projectile/beam/laser/sw13/a280
 	name = "laser"
 	wound_bonus = 0
-	damage = 45
+	damage = 35
 	speed = 0.8 //standard
 
 /obj/projectile/beam/laser/sw13/ee3
 	name = "laser"
 	wound_bonus = 0
-	damage = 45
+	damage = 30
 	speed = 0.8 //standard
 
 /obj/projectile/beam/laser/sw13/dh17
@@ -67,7 +67,7 @@
 /obj/projectile/beam/laser/sw13/dc17
 	name = "laser"
 	wound_bonus = 0
-	damage = 30
+	damage = 25
 	speed = 0.8 //standard
 
 /obj/projectile/beam/laser/sw13/dt12
@@ -79,5 +79,5 @@
 /obj/projectile/beam/laser/sw13/dl44
 	name = "laser"
 	wound_bonus = 0
-	damage = 45
+	damage = 30
 	speed = 0.8 //standard
