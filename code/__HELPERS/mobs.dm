@@ -152,6 +152,9 @@ GLOBAL_LIST_INIT(skin_tones, sortList(list(
 	"indian",
 	"african1",
 	"african2",
+	)))
+
+GLOBAL_LIST_INIT(skin_tones_twilek, sortList(list(
 	"red",
 	"orange",
 	"blue",
