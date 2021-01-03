@@ -229,9 +229,17 @@
 		if("orange")
 			. = "ffc905"
 		if("red")
-			. = "ff0000"
+			. = "BC5A4B"
 		if("blue")
-			. = "0000ff"
+			. = "70A2FF"
+		if("yellow")
+			. = "E0CF82"
+		if("green")
+			. = "8DB27C"
+		if("pink")
+			. = "B77BAF"
+		if("purple")
+			. = "7F5F8E"
 
 /mob/living/carbon/proc/Digitigrade_Leg_Swap(swap_back)
 	var/body_plan_changed = FALSE
