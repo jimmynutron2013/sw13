@@ -155,6 +155,11 @@ GLOBAL_LIST_INIT(skin_tones, sortList(list(
 	"red",
 	"orange",
 	"blue"
+	"yellow"
+	"green"
+	"pink"
+	"purple"
+
 	)))
 
 GLOBAL_LIST_EMPTY(species_list)
