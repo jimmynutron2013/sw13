@@ -154,10 +154,10 @@ GLOBAL_LIST_INIT(skin_tones, sortList(list(
 	"african2",
 	"red",
 	"orange",
-	"blue"
-	"yellow"
-	"green"
-	"pink"
+	"blue",
+	"yellow",
+	"green",
+	"pink",
 	"purple"
 
 	)))
