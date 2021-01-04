@@ -3,6 +3,7 @@
 	id = "twilek"
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,LIPS,HAS_FLESH,HAS_BONE)
+	use_skintones = TRUE
 	mutant_bodyparts = list("wings" = "None", "skin" = "twilek")
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	disliked_food = GROSS | RAW
