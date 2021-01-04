@@ -2343,6 +2343,7 @@
 #include "code\modules\mob\living\carbon\human\species_types\skeletons.dm"
 #include "code\modules\mob\living\carbon\human\species_types\snail.dm"
 #include "code\modules\mob\living\carbon\human\species_types\synths.dm"
+#include "code\modules\mob\living\carbon\human\species_types\twilek.dm"
 #include "code\modules\mob\living\carbon\human\species_types\vampire.dm"
 #include "code\modules\mob\living\carbon\human\species_types\zombies.dm"
 #include "code\modules\mob\living\carbon\monkey\combat.dm"
@@ -3263,5 +3264,4 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
-#include "code\modules\mob\living\carbon\human\species_types\twilek.dm"
 // END_INCLUDE
