@@ -63,6 +63,30 @@
 //////////////////////
 // Hair Definitions //
 //////////////////////
+/datum/sprite_accessory/hairthings
+
+	icon = 'icons/mob/hairthings.dmi'	  // default icon for all hairs
+
+/datum/sprite_accessory/hairthings/test
+	name = "test"
+	icon_state = "togruta_headtails"
+
+/datum/sprite_accessory/hairthings/blue_Stripes
+	name = "Blue Stripes"
+	icon_state = "blue_stripes"
+
+/datum/sprite_accessory/hairthings/thick_Blue
+	name = "Thick Blue"
+	icon_state = "thick_blue"
+
+/datum/sprite_accessory/hairthings/blue_Lines
+	name = "Blue Lines"
+	icon_state = "blue_lines"
+
+/datum/sprite_accessory/hairthings/blue_Dip
+	name = "Blue Dip"
+	icon_state = "blue_dip"
+
 /datum/sprite_accessory/hair
 	icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs
 
