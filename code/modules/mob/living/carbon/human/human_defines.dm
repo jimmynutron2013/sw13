@@ -17,7 +17,7 @@
 	//Hair colour and style
 	var/hair_color = "000"
 	var/hairstyle = "Bald"
-	var/hairthings = "test"
+	var/hairthings = "Blue_Stripes"
 
 	//Facial hair colour and style
 	var/facial_hair_color = "000"

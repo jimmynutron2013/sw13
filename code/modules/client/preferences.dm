@@ -73,7 +73,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/jumpsuit_style = PREF_SUIT		//suit/skirt
 	var/hairstyle = "Bald"				//Hair type
 
-	var/hairthingstyle = "test"
+	var/hairthingstyle = "Blue Stripes"
 
 	var/hair_color = "000"				//Hair color
 	var/facial_hairstyle = "Shaved"	//Face hair type
@@ -318,6 +318,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<span style='border: 1px solid #161616; background-color: #[features["ethcolor"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=color_ethereal;task=input'>Change</a><BR>"
 
 			else if(istype(pref_species, /datum/species/twilek))
+				dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Skin Tone</h3>"
+
+				dat += "<a href='?_src_=prefs;preference=s_tone_twilek;task=input'>[skin_tone]</a>"
+				dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_SKIN_TONE]'>[(randomise[RANDOM_SKIN_TONE]) ? "Lock" : "Unlock"]</A>"
+				dat += "<br>"
+
+			else if(istype(pref_species, /datum/species/togruta))
 				dat += APPEARANCE_CATEGORY_COLUMN
 
 				dat += "<h3>Skin Tone</h3>"
@@ -1336,6 +1345,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				if("hairthingstyle")
 					var/new_hairthingstyle
+					new_hairthingstyle = input(user, "Choose your character's Lekkus:", "Character Preference")  as null|anything in GLOB.hairthings_list
 					if(new_hairthingstyle)
 						hairthingstyle = new_hairthingstyle
 
