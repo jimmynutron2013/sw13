@@ -63,6 +63,14 @@
 //////////////////////
 // Hair Definitions //
 //////////////////////
+/datum/sprite_accessory/hairthings//todo hairthings
+
+	icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs
+
+/datum/sprite_accessory/hairthings/test
+	name = "test"
+	icon_state = "test"
+
 /datum/sprite_accessory/hair
 	icon = 'icons/mob/human_face.dmi'	  // default icon for all hairs
 

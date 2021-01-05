@@ -591,6 +591,45 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if(OFFSET_FACE in H.dna.species.offset_features)
 					hair_overlay.pixel_x += H.dna.species.offset_features[OFFSET_FACE][1]
 					hair_overlay.pixel_y += H.dna.species.offset_features[OFFSET_FACE][2]
+		else if(H.hairthings && (HAIRTHINGS in species_traits))
+			S = GLOB.hairthings_list[H.hairthings]
+			if(S)
+
+				//List of all valid dynamic_hair_suffixes
+				var/static/list/extensions
+				if(!extensions)
+					var/icon/hair_extensions = icon('icons/mob/hair_extensions.dmi') //hehe
+					extensions = list()
+					for(var/s in hair_extensions.IconStates(1))
+						extensions[s] = TRUE
+					qdel(hair_extensions)
+
+				//Is hair+dynamic_hair_suffix a valid iconstate?
+				var/hair_state = S.icon_state
+				var/hair_file = S.icon
+				if(extensions[hair_state+dynamic_hair_suffix])
+					hair_state += dynamic_hair_suffix
+					hair_file = 'icons/mob/hair_extensions.dmi'
+
+				hair_overlay.icon = hair_file
+				hair_overlay.icon_state = hair_state
+
+				if(!forced_colour)
+					if(hair_color)
+						if(hair_color == "mutcolor")
+							hair_overlay.color = "#" + H.dna.features["mcolor"]
+						else if(hair_color == "fixedmutcolor")
+							hair_overlay.color = "#[fixed_mut_color]"
+						else
+							hair_overlay.color = "#" + hair_color
+					else
+						hair_overlay.color = "#" + H.hair_color
+				else
+					hair_overlay.color = forced_colour
+				hair_overlay.alpha = hair_alpha
+				if(OFFSET_FACE in H.dna.species.offset_features)
+					hair_overlay.pixel_x += H.dna.species.offset_features[OFFSET_FACE][1]
+					hair_overlay.pixel_y += H.dna.species.offset_features[OFFSET_FACE][2]
 		if(hair_overlay.icon)
 			standing += hair_overlay
 

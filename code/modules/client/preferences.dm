@@ -72,6 +72,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/backpack = DBACKPACK				//backpack type
 	var/jumpsuit_style = PREF_SUIT		//suit/skirt
 	var/hairstyle = "Bald"				//Hair type
+
+	var/hairthingstyle = "test"
+
 	var/hair_color = "000"				//Hair color
 	var/facial_hairstyle = "Shaved"	//Face hair type
 	var/facial_hair_color = "000"		//Facial hair color
@@ -379,6 +382,19 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<br><span style='border: 1px solid #161616; background-color: #[facial_hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=facial;task=input'>Change</a>"
 				dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_FACIAL_HAIR_COLOR]'>[(randomise[RANDOM_FACIAL_HAIR_COLOR]) ? "Lock" : "Unlock"]</A>"
 				dat += "<br></td>"
+
+			if(HAIRTHINGS in pref_species.species_traits)
+
+				dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Lekku style</h3>"
+
+				dat += "<a href='?_src_=prefs;preference=hairthingstyle;task=input'>[hairthingstyle]</a>"
+				dat += "<a href='?_src_=prefs;preference=previous_hairthingstyle;task=input'>&lt;</a> <a href='?_src_=prefs;preference=next_hairthingstyle;task=input'>&gt;</a>"
+				dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_HAIRSTYLE]'>[(randomise[RANDOM_HAIRSTYLE]) ? "Lock" : "Unlock"]</A>"
+
+				dat += "<br><span style='border:1px solid #161616; background-color: #[hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=hair;task=input'>Change</a>"
+				dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_HAIR_COLOR]'>[(randomise[RANDOM_HAIR_COLOR]) ? "Lock" : "Unlock"]</A>"
 
 			//Mutant stuff
 			var/mutant_category = 0
@@ -1207,6 +1223,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					hair_color = random_short_color()
 				if("hairstyle")
 					hairstyle = random_hairstyle(gender)
+				if("hairthingstyle")
+					hairthingstyle = random_hairthings(gender)
 				if("facial")
 					facial_hair_color = random_short_color()
 				if("facial_hairstyle")
@@ -1315,6 +1333,17 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						hairstyle = previous_list_item(hairstyle, GLOB.hairstyles_female_list)
 					else
 						hairstyle = previous_list_item(hairstyle, GLOB.hairstyles_list)
+
+				if("hairthingstyle")
+					var/new_hairthingstyle
+					if(new_hairthingstyle)
+						hairthingstyle = new_hairthingstyle
+
+				if("next_hairthingstyle")
+					hairthingstyle = next_list_item(hairthingstyle, GLOB.hairthings_list)
+
+				if("previous_hairthingstyle")
+					hairthingstyle = previous_list_item(hairthingstyle, GLOB.hairthings_list)
 
 				if("facial")
 					var/new_facial = input(user, "Choose your character's facial-hair colour:", "Character Preference","#"+facial_hair_color) as color|null
